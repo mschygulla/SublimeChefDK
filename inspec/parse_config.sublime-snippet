@@ -1,0 +1,15 @@
+<snippet>
+  <content><![CDATA[
+output = command('some-command').stdout
+
+describe parse_config(output, { data_config_option: value } ) do
+  its('setting') { should eq 1 }
+end
+
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>describe parse_config</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.ruby</scope>
+  <description>describe parse_config</description>
+</snippet>

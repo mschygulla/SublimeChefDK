@@ -1,0 +1,7 @@
+[
+  {
+    "keys": ["alt+g"],
+    "command": "chef_dk_test",
+    "args": {}
+  }
+]

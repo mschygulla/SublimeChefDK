@@ -1,0 +1,19 @@
+<snippet>
+  <content><![CDATA[
+dsc_script '${1:install-webserver}' do
+  code <<-EOH
+  WindowsFeature InstallWebServer
+  {
+    Name = "Web-Server"
+    Ensure = "Present"
+  }
+  EOH
+end
+
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>dsc_script</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.ruby</scope>
+  <description>dsc_script</description>
+</snippet>

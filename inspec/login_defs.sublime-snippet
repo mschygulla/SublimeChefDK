@@ -1,0 +1,16 @@
+<snippet>
+  <content><![CDATA[
+describe login_defs do
+  its('PASS_MAX_DAYS') { should eq '180' }
+  its('PASS_MIN_DAYS') { should eq '1' }
+  its('PASS_MIN_LEN') { should eq '15' }
+  its('PASS_WARN_AGE') { should eq '30' }
+end
+
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>describe login_defs</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.ruby</scope>
+  <description>describe login_defs</description>
+</snippet>

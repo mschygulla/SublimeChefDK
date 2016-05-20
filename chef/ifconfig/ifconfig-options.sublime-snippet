@@ -1,0 +1,17 @@
+<snippet>
+  <content><![CDATA[
+ifconfig '${1:192.168.0.1}' do
+  bootproto '${2:static}'
+  onboot '${3:yes}'
+  mask '${4:255.255.255.0}'
+  device '${5:eth1}'
+  action :${6:add}
+end
+
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>ifconfigo</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.ruby</scope>
+  <description>ifconfig options</description>
+</snippet>

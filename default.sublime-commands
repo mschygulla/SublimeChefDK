@@ -1,0 +1,6 @@
+[
+  {
+    "caption": "ChefDK: Run Resource Test",
+    "command": "chef_dk_test"
+  }
+]

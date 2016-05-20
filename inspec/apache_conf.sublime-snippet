@@ -1,0 +1,14 @@
+<snippet>
+  <content><![CDATA[
+describe apache_conf('/etc/apache2') do
+  its('Listen') { should eq '443'}
+  its('AllowOverride') { should eq 'None' }
+end
+
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>describe apache_conf</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.ruby</scope>
+  <description>describe apache_conf</description>
+</snippet>

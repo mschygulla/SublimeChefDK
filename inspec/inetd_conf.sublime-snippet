@@ -1,0 +1,14 @@
+<snippet>
+  <content><![CDATA[
+describe inetd_conf do
+  its('ftp') { should eq nil }
+  its('telnet') { should eq nil }
+end
+
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>describe inetd_conf</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.ruby</scope>
+  <description>describe inetd_conf</description>
+</snippet>

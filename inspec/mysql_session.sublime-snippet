@@ -1,0 +1,13 @@
+<snippet>
+  <content><![CDATA[
+describe mysql_session('username', 'password').query('show databases like \'test\';') do
+  its(:stdout) { should_not match(/test/) }
+end
+
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>describe mysql_session</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.ruby</scope>
+  <description>describe mysql_session</description>
+</snippet>

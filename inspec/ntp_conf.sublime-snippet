@@ -1,0 +1,18 @@
+<snippet>
+  <content><![CDATA[
+describe ntp_conf do
+  its('driftfile') { should eq '/var/lib/ntp/ntp.drift' }
+  its('server') { should eq [
+    0.ubuntu.pool.ntp.org,
+    1.ubuntu.pool.ntp.org,
+    2.ubuntu.pool.ntp.org
+  ] }
+end
+
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>describe ntp_conf</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.ruby</scope>
+  <description>describe ntp_conf</description>
+</snippet>

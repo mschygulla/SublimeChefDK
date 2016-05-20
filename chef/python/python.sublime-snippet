@@ -1,0 +1,17 @@
+<snippet>
+	<content><![CDATA[
+python '${1:do something}' do
+  user '${2:root}'
+  cwd '${3:/tmp}'
+  code <<-EOH
+    print "Hello world! From Chef and Python."
+  EOH
+end
+
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>python</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.ruby</scope>
+	<description>python script</description>
+</snippet>

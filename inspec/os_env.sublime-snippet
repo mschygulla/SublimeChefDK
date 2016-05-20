@@ -1,0 +1,15 @@
+<snippet>
+  <content><![CDATA[
+describe os_env('PATH') do
+  its('content') { should eq '/usr/local/bin:/usr/local/sbin:/usr/sbin:/usr/bin:/sbin' }
+  its('split') { should_not include('') }
+  its('split') { should_not include('.') }
+end
+
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>describe os_env</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.ruby</scope>
+  <description>describe os_env</description>
+</snippet>

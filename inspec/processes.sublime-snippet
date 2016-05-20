@@ -1,0 +1,13 @@
+<snippet>
+  <content><![CDATA[
+describe processes('init') do
+  its('user') { should eq 'root' }
+end
+
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>describe processes</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.ruby</scope>
+  <description>describe processes</description>
+</snippet>

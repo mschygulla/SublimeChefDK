@@ -1,0 +1,13 @@
+<snippet>
+  <content><![CDATA[
+describe yaml('.kitchen.yaml') do
+  its('driver.name') { should eq('vagrant') }
+end
+
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>describe yaml</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.ruby</scope>
+  <description>describe yaml</description>
+</snippet>

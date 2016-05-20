@@ -1,0 +1,21 @@
+<snippet>
+  <content><![CDATA[
+describe auditd_rules do
+  its('LIST_RULES') { should eq [
+    'exit,always syscall=rmdir,unlink',
+    'exit,always auid=1001 (0x3e9) syscall=open',
+    'exit,always watch=/etc/group perm=wa',
+    'exit,always watch=/etc/passwd perm=wa',
+    'exit,always watch=/etc/shadow perm=wa',
+    'exit,always watch=/etc/sudoers perm=wa',
+    'exit,always watch=/etc/secret_directory perm=r',
+  ] }
+end
+
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>describe auditd_rules</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.ruby</scope>
+  <description>describe auditd_rules</description>
+</snippet>

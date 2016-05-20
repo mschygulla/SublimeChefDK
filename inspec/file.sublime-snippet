@@ -1,0 +1,53 @@
+<snippet>
+  <content><![CDATA[
+describe file('/dev/stdout') do
+  it { should be_block_device }
+  it { should be_character_device }
+  it { should be_directory }
+  it { should be_executable }
+  it { should be_executable.by('group') }
+  it { should be_executable.by('owner') }
+  it { should be_executable.by_user('user') }
+  it { should be_file }
+  it { should be_grouped_into 'group' }
+  it { should be_immutable }
+  it { should be_linked_to '/etc/target-file' }
+  it { should be_mounted }
+  it { should be_owned_by 'root' }
+  it { should be_pipe }
+  it { should be_readable }
+  it { should be_readable.by('group') }
+  it { should be_readable.by('owner') }
+  it { should be_readable.by_user('user') }
+  it { should be_socket }
+  it { should be_symlink }
+  it { should be_version '1.2.3' }
+  it { should be_writable }
+  it { should be_writable.by('group') }
+  it { should be_writable.by('owner') }
+  it { should be_writable.by_user('user') }
+  its('content') { should match '/local\s.*?all\s.*?all\s.*?md5/' }
+  it { should exist }
+  its('file_version') { should eq '1.2.3' }
+  its('group') { should eq 'admins' }
+  it { should have_mode }
+  its('link_path') { should eq '/some/path/to/file' }
+  its('link_target') { should eq '/some/path/to/file' }
+  its('md5sum') { should eq '3329x3hf9130gjs9jlasf2305mx91s4j' }
+  its('mode') { should eq 0644 }
+  its('mtime') { should eq 'October 31 2015 12:10:45' }
+  its('owner') { should eq 'root' }
+  its('product_version') { should eq 2.3.4 }
+  its('selinux_label') { should eq 'system_u:system_r:httpd_t:s0' }
+  its('sha256sum') { should eq 'b837ch38lh19bb8eaopl8jvxwd2e4g58jn9lkho1w3ed9jbkeicalplaad9k0pjn' }
+  its('size') { should eq 32375 }
+  its('type') { should eq 'symlink' }
+end
+
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>describe file</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.ruby</scope>
+  <description>describe file</description>
+</snippet>

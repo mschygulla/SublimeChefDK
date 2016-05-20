@@ -1,0 +1,15 @@
+<snippet>
+  <content><![CDATA[
+reboot '${1:app_requires_reboot}' do
+  action :${2:request_reboot}
+  reason '${3:Need to reboot when the run completes successfully.}'
+  delay_mins ${4:5}
+end
+
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>reboot</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.ruby</scope>
+  <description>reboot</description>
+</snippet>

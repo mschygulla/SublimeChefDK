@@ -1,0 +1,14 @@
+<snippet>
+  <content><![CDATA[
+route '${1:110.0.1.10/32}' do
+  gateway '${2:10.0.0.20}'
+  action :delete
+end
+
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>routed</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.ruby</scope>
+  <description>route delete</description>
+</snippet>

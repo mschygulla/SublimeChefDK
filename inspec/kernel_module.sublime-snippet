@@ -1,0 +1,13 @@
+<snippet>
+  <content><![CDATA[
+describe kernel_module('module_name') do
+  it { should be_loaded }
+end
+
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>describe kernel_module</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.ruby</scope>
+  <description>describe kernel_module</description>
+</snippet>

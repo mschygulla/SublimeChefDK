@@ -1,0 +1,14 @@
+<snippet>
+  <content><![CDATA[
+windows_service '${1:7zip}' do
+  action :${2:configure_startup}
+  startup_type '${3:manual}'
+end
+
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>windows_service</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.ruby</scope>
+  <description>windows_service</description>
+</snippet>

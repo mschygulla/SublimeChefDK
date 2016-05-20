@@ -1,0 +1,14 @@
+<snippet>
+  <content><![CDATA[
+describe mysql_conf('path') do
+  its('max_connections') { should eq '505' }
+  its('max_user_connections') { should eq '500' }
+end
+
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>describe mysql_conf</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.ruby</scope>
+  <description>describe mysql_conf</description>
+</snippet>

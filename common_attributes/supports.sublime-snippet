@@ -1,0 +1,11 @@
+<snippet>
+	<content><![CDATA[
+supports start: ${1:true}, stop: ${2:true}, status: ${3:true}, restart: ${4:true}, reload: ${5:true}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>supports</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.ruby</scope>
+	<description>supports</description>
+</snippet>
+

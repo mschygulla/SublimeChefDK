@@ -1,0 +1,14 @@
+<snippet>
+  <content><![CDATA[
+describe gem('rubocop') do
+  it { should be_installed }
+  its('version') { should eq '0.33.0' }
+end
+
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>describe gem</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.ruby</scope>
+  <description>describe gem</description>
+</snippet>

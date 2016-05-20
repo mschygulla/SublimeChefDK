@@ -1,0 +1,15 @@
+<snippet>
+  <content><![CDATA[
+describe interface do
+  it { should be_up }
+  its('speed') { should eq 1000 }
+  its('name') { should eq eth0 }
+end
+
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>describe interface</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.ruby</scope>
+  <description>describe interface</description>
+</snippet>

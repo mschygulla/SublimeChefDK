@@ -1,0 +1,15 @@
+<snippet>
+  <content><![CDATA[
+describe command('echo hello') do
+  its('stdout') { should eq 'hello\n' }
+  its('stderr') { should eq '' }
+  its('exit_status') { should eq 0 }
+end
+
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>describe command</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.ruby</scope>
+  <description>describe command</description>
+</snippet>

@@ -1,0 +1,14 @@
+<snippet>
+  <content><![CDATA[
+windows_package '${1:7zip}' do
+  action :${2:install}
+  source '${3:C:\7z920.msi}'
+end
+
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>windows_package</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.ruby</scope>
+  <description>windows_package</description>
+</snippet>

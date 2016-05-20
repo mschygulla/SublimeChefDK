@@ -1,0 +1,22 @@
+<snippet>
+  <content><![CDATA[
+describe user('root') do
+  it { should exist }
+  its('uid') { should eq 1234 }
+  its('gid') { should eq 1234 }
+  its('group') { should eq 'root' }
+  its('groups') { should eq ['root', 'other']}
+  its('home') { should eq '/root' }
+  its('shell') { should eq '/bin/bash' }
+  its('mindays') { should eq 0 }
+  its('maxdays') { should eq 90 }
+  its('warndays') { should eq 8 }
+end
+
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>describe user</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.ruby</scope>
+  <description>describe user</description>
+</snippet>

@@ -1,0 +1,15 @@
+<snippet>
+  <content><![CDATA[
+describe json('policyfile.lock.json') do
+  its('cookbook_locks.omnibus.version') { should eq('2.2.0') }
+end
+
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>describe json</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.ruby</scope>
+  <description>describe json</description>
+</snippet>
+
+

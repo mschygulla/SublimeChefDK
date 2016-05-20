@@ -1,0 +1,14 @@
+<snippet>
+	<content><![CDATA[
+service '${1:name}' do
+  supports start: ${2:true}, stop: ${3:true}, status: ${4:true}, restart: ${5:true}, reload: ${6:true}
+  action ${7:[:start, :enable]}
+end
+
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>service</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.ruby</scope>
+	<description>service</description>
+</snippet>

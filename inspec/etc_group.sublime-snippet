@@ -1,0 +1,15 @@
+<snippet>
+  <content><![CDATA[
+describe etc_group.where(name: 'name', group_name: 'group_name', password: 'password', gid: 'gid', group_id: 'gid', users: 'user_name', members: 'member_name') do
+  its('gids') { should_not contain_duplicates }
+  its('groups') { should include 'user_name' }
+  its('users') { should include 'user_name' }
+end
+
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>describe etc_group</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.ruby</scope>
+  <description>describe etc_group</description>
+</snippet>

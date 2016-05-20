@@ -1,0 +1,14 @@
+<snippet>
+  <content><![CDATA[
+describe bridge('br0') do
+  it { should exist }
+  it { should have_interface 'eth0' }
+end
+
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>describe bridge</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.ruby</scope>
+  <description>describe bridge</description>
+</snippet>

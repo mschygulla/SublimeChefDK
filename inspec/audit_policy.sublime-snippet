@@ -1,0 +1,13 @@
+<snippet>
+  <content><![CDATA[
+describe audit_policy do
+  its('User Account Management') { should eq 'Success' }
+end
+
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>describe audit_policy</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.ruby</scope>
+  <description>describe audit_policy</description>
+</snippet>

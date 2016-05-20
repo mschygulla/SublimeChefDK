@@ -1,0 +1,26 @@
+<snippet>
+  <content><![CDATA[
+describe auditd_conf('/etc/audit/auditd.conf') do
+  its('log_file') { should eq '/full/path/to/file' }
+  its('log_format') { should eq 'raw' }
+  its('flush') { should eq 'none' }
+  its('freq') { should eq '1' }
+  its('num_logs') { should eq '0' }
+  its('max_log_file') { should eq '6' }
+  its('max_log_file_action') { should eq 'email' }
+  its('space_left') { should eq '2' }
+  its('action_mail_acct') { should eq 'root' }
+  its('space_left_action') { should eq 'email' }
+  its('admin_space_left') { should eq '1' }
+  its('admin_space_left_action') { should eq 'halt' }
+  its('disk_full_action') { should eq 'halt' }
+  its('disk_error_action') { should eq 'halt' }
+end
+
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>describe auditd_conf</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.ruby</scope>
+  <description>describe auditd_conf</description>
+</snippet>

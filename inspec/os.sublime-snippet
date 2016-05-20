@@ -1,0 +1,13 @@
+<snippet>
+  <content><![CDATA[
+describe os['family'] do
+  it { should eq 'platform' }
+end
+
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>describe os</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.ruby</scope>
+  <description>describe os</description>
+</snippet>

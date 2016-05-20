@@ -1,0 +1,13 @@
+<snippet>
+  <content><![CDATA[
+describe iptables do
+  it { should have_rule('-P INPUT ACCEPT') }
+end
+
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>describe iptables</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.ruby</scope>
+  <description>describe iptables</description>
+</snippet>

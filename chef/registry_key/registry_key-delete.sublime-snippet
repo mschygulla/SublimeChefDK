@@ -1,0 +1,14 @@
+<snippet>
+  <content><![CDATA[
+registry_key '${1:HKCU\\SOFTWARE\\Policies\\path\\to\\key\\Themes}' do
+  recursive true
+  action :delete_key
+end
+
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>registry_keyd</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.ruby</scope>
+  <description>registry_key delete</description>
+</snippet>

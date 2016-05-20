@@ -1,0 +1,15 @@
+<snippet>
+  <content><![CDATA[
+describe port(514) do
+  it { should be_listening }
+  its('process') {should eq 'syslog'}
+  its('protocol') {should eq 'tcp'}
+end
+
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>describe port</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.ruby</scope>
+  <description>describe port</description>
+</snippet>

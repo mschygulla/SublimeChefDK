@@ -1,0 +1,14 @@
+<snippet>
+  <content><![CDATA[
+describe pip('Jinja2') do
+  it { should be_installed }
+  its('version') { should eq '2.8' }
+end
+
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>describe pip</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.ruby</scope>
+  <description>describe pip</description>
+</snippet>

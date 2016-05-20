@@ -1,0 +1,27 @@
+<snippet>
+  <content><![CDATA[
+name             'example'
+maintainer       'The Authors'
+maintainer_email 'you@example.com'
+license          'All rights reserved'
+description      'Installs/Configures example'
+long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
+version          '0.1.0'
+depends          'package'
+attribute        'pets/cat/name', :display_name => 'Cat Name'
+grouping         'pets/cat', :title => 'Cat Options'
+conflicts        'package'
+provides         'service[example]'
+recipe           'example::one', 'Description for example'
+recommends       'package'
+replaces         'package'
+supports         'ubuntu'
+suggests         'package'
+
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>metadataf</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.ruby</scope>
+  <description>metadata full</description>
+</snippet>

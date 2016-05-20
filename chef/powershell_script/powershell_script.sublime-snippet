@@ -1,0 +1,17 @@
+<snippet>
+  <content><![CDATA[
+powershell_script '${1:cwd-to-win-env-var}' do
+  code <<-EOH
+    \$stream = [System.IO.StreamWriter] "./temp-write-from-chef.txt"
+    \$stream.WriteLine("chef on windows rox yo!")
+    \$stream.close()
+  EOH
+end
+
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>powershell_script</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.ruby</scope>
+  <description>powershell script</description>
+</snippet>

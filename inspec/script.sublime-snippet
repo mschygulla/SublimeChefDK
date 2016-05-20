@@ -1,0 +1,17 @@
+<snippet>
+  <content><![CDATA[
+script = <<-EOH
+  # you powershell script
+EOH
+
+describe script(script) do
+  its('matcher') { should eq 'output' }
+end
+
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>describe script</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.ruby</scope>
+  <description>describe script</description>
+</snippet>

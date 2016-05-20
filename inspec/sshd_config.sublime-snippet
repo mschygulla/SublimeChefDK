@@ -1,0 +1,13 @@
+<snippet>
+  <content><![CDATA[
+describe sshd_config do
+  its('Protocol') { should eq '2' }
+end
+
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>describe sshd_config</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.ruby</scope>
+  <description>describe sshd_config</description>
+</snippet>
